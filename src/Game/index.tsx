@@ -21,10 +21,6 @@ const Game = () => {
   const [numberIsFib, setNumberIsFib] = useState(false);
   const [numberInput, setNumberInput] = useState("");
 
-  //   const [numberFrequencyCounter, setNumberFrequencyCounter] = useState<
-  //     Record<string, number>
-  //   >({});
-
   const [numberFrequencyCounter, setNumberFrequencyCounter] = useState<
     NumberCounter[]
   >([]);
