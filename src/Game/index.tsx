@@ -113,7 +113,11 @@ const Game = () => {
             <Text>{displayedNumberFreq}</Text>
             <Text>{numberIsFib ? "FIB" : ""}</Text>
           </Stack>
-          <Text size="s">Please enter a number</Text>
+          <Text size="s">
+            {!numberFrequencyCounter.length
+              ? "Please enter the first number"
+              : "Please enter the next number"}
+          </Text>
           <Flex alignItems={"center"}>
             <Input
               size="s"

@@ -36,7 +36,7 @@ const Timer = ({ initSeconds, updateDisplayedValues }: Props) => {
   }, [tick]);
 
   return (
-    <Flex width={"full"} justifyContent={"space-around"}>
+    <Flex width={"full"} justifyContent={"space-around"} alignItems={"center"}>
       <Text>{`${seconds} seconds`}</Text>{" "}
       <Button colorScheme={pause ? "green" : "orange"} onClick={onHaltOrResume}>
         {pause ? "Resume" : " Halt"}
